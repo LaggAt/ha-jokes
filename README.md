@@ -10,6 +10,12 @@ Every Minute, a sensor provides a joke. Done.
 
 Thanks for providing the 'Random dad joke' API. They also offer Discord, Alexa and many more integrations :) Really great and fun project.
 
+* Logo used for this integration
+
+Pull request open: https://github.com/home-assistant/brands/pull/3859
+
+Original by [East718](https://en.wikipedia.org/wiki/User:User:East718), SVG conversion: This vector image was created with Inkscape by Howcheng, and then manually edited by [Giro720](https://commons.wikimedia.org/wiki/User:Giro720). CC BY-SA 3.0, via Wikimedia Commons.
+
 * https://www.home-assistant.io/
 
 Home Assistant is a great software to automate and connect anything around your home. Anything is possible.
