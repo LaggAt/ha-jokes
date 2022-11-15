@@ -10,9 +10,9 @@ Every Minute, a sensor provides a joke. Done.
 
 Thanks for providing the 'Random dad joke' API. They also offer Discord, Alexa and many more integrations :) Really great and fun project.
 
-* Logo used for this integration
+* Logo used for this integration 
 
-Pull request open: https://github.com/home-assistant/brands/pull/3859
+<img src="https://github.com/home-assistant/brands/blob/master/custom_integrations/jokes/icon.png?raw=true"  width="64" height="64">
 
 Original by [East718](https://en.wikipedia.org/wiki/User:User:East718), SVG conversion: This vector image was created with Inkscape by Howcheng, and then manually edited by [Giro720](https://commons.wikimedia.org/wiki/User:Giro720). CC BY-SA 3.0, via Wikimedia Commons.
 
@@ -27,6 +27,7 @@ The 'Home Assistant Community Store' is a great addition, providing even more co
 ## Why
 
 This component exists to develop, test and show my dev container.
+
 https://github.com/LaggAt/ha-devcontainer
 
 ## Progess
