@@ -1,0 +1,43 @@
+{
+    "name": "Jokes devcontainer",
+    //use our dev container
+    "image": "ghcr.io/laggat/ha-devcontainer:main",
+    //run scripts/postCreate.sh after successful container creation. '/bin/bash -x' shows every line executed. 
+    "postCreateCommand": "/bin/bash -x ${containerWorkspaceFolder}/.devcontainer/scripts/postCreate.sh",
+    "postStartCommand": "/bin/echo ha-devcontainer started.", 
+    "postAttachCommand": "/bin/echo ha-devcontainer attached.",
+    //install these vscode extensions
+    "extensions": [],
+    //use these devcontainer settings
+    "settings": {
+		//linux line breaks
+        "files.eol": "\n"
+    },
+    //how to run the container, network mode, privileged, volumes, ...
+    "runArgs": [
+		"--name",
+		"devcontainer_govee",
+		"--network",
+		"host",
+		"--privileged",
+		"-v", "/etc/machine-id:/etc/machine-id:ro",
+		//"-v", "/run/dbus:/run/dbus:ro",
+		"-v", "/run/user/1000/bus:/run/user/1000/bus",
+		"-v", "/dev:/dev:ro",
+		"-v", "/run/udev:/run/udev:ro",
+		"-v", "/run/docker.sock:/run/docker.sock:rw"
+	],
+    //Environment Variables to set in the dev container
+    "containerEnv": {},
+    //security options
+    "securityOpt": [
+		"seccomp:unconfined",
+		"apparmor:unconfined"
+	],
+    //TODO: remove these
+    //user defaults to vscode, let's use root for easier handling for now
+	"remoteUser": "root",
+	"containerUser": "root",
+    //set context to the root folder (which is one up from ./.devcontainer)
+    "context": ".."
+}
