@@ -4,6 +4,20 @@ This is the simplest but somewhat useful and funny integration I could think of.
 
 Every Minute, a sensor provides a joke. Done.
 
+## Shoutout/Kudos
+
+* https://icanhazdadjoke.com/
+
+Thanks for providing the 'Random dad joke' API. They also offer Discord, Alexa and many more integrations :) Really great and fun project.
+
+* https://www.home-assistant.io/
+
+Home Assistant is a great software to automate and connect anything around your home. Anything is possible.
+
+* https://hacs.xyz/
+
+The 'Home Assistant Community Store' is a great addition, providing even more community integrations in a decentralized manner.
+
 ## Why
 
 This component exists to develop, test and show my dev container.
