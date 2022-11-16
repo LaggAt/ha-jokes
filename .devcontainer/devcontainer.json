@@ -34,7 +34,6 @@
 		"seccomp:unconfined",
 		"apparmor:unconfined"
 	],
-    //TODO: remove these
     //user defaults to vscode, let's use root for easier handling for now
 	"remoteUser": "root",
 	"containerUser": "root",
