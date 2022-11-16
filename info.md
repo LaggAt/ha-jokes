@@ -40,7 +40,7 @@ Thank you!
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
 [hacs]: https://github.com/hacs/integration
 [hacsbadge]: https://img.shields.io/badge/HACS-Default-orange.svg?style=for-the-badge
-[license-shield]: https://img.shields.io/github/license/LaggAt/hacs-jokes
+[license-shield]: https://img.shields.io/github/license/LaggAt/ha-jokes
 [maintenance-shield]: https://img.shields.io/badge/maintainer-Florian%20Lagg-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/custom-components/hacs-jokes.svg?style=for-the-badge
-[releases]: https://github.com/custom-components/hacs-jokes/releases
+[releases-shield]: https://img.shields.io/github/release/custom-components/ha-jokes.svg?style=for-the-badge
+[releases]: https://github.com/custom-components/ha-jokes/releases
