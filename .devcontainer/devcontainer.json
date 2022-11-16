@@ -6,6 +6,8 @@
     "postCreateCommand": "/bin/bash -x ${containerWorkspaceFolder}/.devcontainer/scripts/postCreate.sh",
     "postStartCommand": "/bin/echo ha-devcontainer started.", 
     "postAttachCommand": "/bin/echo ha-devcontainer attached.",
+    //publish ha on 9123 when started
+    "appPort": ["9123:8123"],
     //install these vscode extensions
     "extensions": [],
     //use these devcontainer settings
