@@ -1,6 +1,5 @@
 {
     "name": "jokes",
     "hacs": "0.0.1",
-    "iot_class": "Cloud Polling",
     "homeassistant": "2022.11.1"
 }
