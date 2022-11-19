@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#TODO: run your scripts here
-#TODO: start home assistant
+#activate all custom_components in /workspaces/...
+/usr/local/bin/dev component activate --all
 
-/bin/echo Welcome to ha-devcontainer! Start coding!
+#TODO: run your scripts here
+
+#start home assistant in background
+/usr/local/bin/dev ha start &

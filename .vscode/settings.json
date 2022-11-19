@@ -1,3 +1,11 @@
 {
+    //linux line breaks
     "files.eol": "\n",
+    //prefer ZSH shell
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "/usr/bin/zsh"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
 }

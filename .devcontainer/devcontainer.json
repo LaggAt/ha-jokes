@@ -9,16 +9,26 @@
     //publish ha on 9123 when started
     "appPort": ["9123:8123"],
     //install these vscode extensions
-    "extensions": [],
+    "extensions": [
+        // debug bash scripts
+        "rogalmic.bash-debug",
+    ],
     //use these devcontainer settings
     "settings": {
 		//linux line breaks
-        "files.eol": "\n"
+        "files.eol": "\n",
+        //prefer ZSH shell
+        "terminal.integrated.profiles.linux": {
+            "zsh": {
+                "path": "/usr/bin/zsh"
+            }
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh",
     },
     //how to run the container, network mode, privileged, volumes, ...
     "runArgs": [
 		"--name",
-		"devcontainer_govee",
+		"devcontainer_jokes",
 		"--network",
 		"host",
 		"--privileged",

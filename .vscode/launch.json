@@ -1,0 +1,54 @@
+{
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start: Home Assistant",
+            "type": "bashdb",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "/usr/local/bin/dev",
+            "args": ["ha", "start"],
+        },
+        {
+            "name": "Chrome: Open Home Assistant UI",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8123",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Python: Remote-Attach debugger",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "."
+                }
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "Python: debug current file",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Bash: debug current file",
+            "type": "bashdb",
+            "request": "launch",
+            "program": "${file}",
+            "args": [],
+        },
+    ]
+}
