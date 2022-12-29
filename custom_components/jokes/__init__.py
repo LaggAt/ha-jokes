@@ -70,7 +70,10 @@ class JokeUpdateCoordinator(DataUpdateCoordinator):
         
         #get a random joke (finally)
         try:
-            headers = {'Accept': 'application/json'}
+            headers = {
+                'Accept': 'application/json',
+                'User-Agent': 'Jokes custom integration for Home Assistant (https://github.com/LaggAt/ha-jokes)'
+            }
             async with aiohttp.ClientSession() as session:
                 async with session.get('https://icanhazdadjoke.com/', headers=headers) as resp:
                     if resp.status == 200:
