@@ -1,8 +1,12 @@
 {
     "name": "Jokes devcontainer",
-    //use our dev container
-    "image": "ghcr.io/laggat/ha-devcontainer:main",
-    //run scripts/postCreate.sh after successful container creation. '/bin/bash -x' shows every line executed. 
+    
+	//image can be the latest public dev container, 
+	//or some locally build dev container based on https://github.com/LaggAt/ha-devcontainer
+	"image": "ghcr.io/laggat/ha-devcontainer:main",
+    //"image": "ha-devcontainer:dev",
+    
+	//run scripts/postCreate.sh after successful container creation. '/bin/bash -x' shows every line executed. 
     "postCreateCommand": "/bin/bash -x ${containerWorkspaceFolder}/.devcontainer/scripts/postCreate.sh",
     "postStartCommand": "/bin/echo ha-devcontainer started.", 
     "postAttachCommand": "/bin/echo ha-devcontainer attached.",
