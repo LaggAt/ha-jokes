@@ -38,7 +38,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     coordinator = JokeUpdateCoordinator(
         hass,
         _LOGGER,
-        update_interval=timedelta(seconds=60)
+        update_interval=timedelta(minutes=15)
     )
     await coordinator.async_refresh()
     
